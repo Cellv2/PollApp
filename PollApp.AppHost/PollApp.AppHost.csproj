@@ -4,11 +4,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
-    <UserSecretsId>ff2cf3e4-12c3-4322-a50d-2f7b5bf86a7d</UserSecretsId>
+    <UserSecretsId>9a964740-d3e1-4e39-aff9-e62a0ddffa0b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
