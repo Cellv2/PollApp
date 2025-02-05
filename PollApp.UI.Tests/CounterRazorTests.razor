@@ -1,3 +1,4 @@
+@using PollApp.UI.Components.Pages
 @inherits TestContext
 
 These tests are written entirely in razor and C# syntax.
@@ -12,7 +13,7 @@ Learn more at https://bunit.dev/docs/getting-started/writing-tests.html#creating
 		var cut = Render(@<Counter />);
 
 		// Assert that content of the paragraph shows counter at zero
-		cut.Find("p").MarkupMatches(@<p>Current count: 0</p>);
+		cut.Find("p").MarkupMatches(@<p role="status">Current count: 0</p>);
 	}
     [Fact]
 	public void ClickingButtonIncrementsCounter()
@@ -24,6 +25,6 @@ Learn more at https://bunit.dev/docs/getting-started/writing-tests.html#creating
 		cut.Find("button").Click();
 
 		// Assert that the counter was incremented
-		cut.Find("p").MarkupMatches(@<p>Current count: 1</p>);
+		cut.Find("p").MarkupMatches(@<p role="status">Current count: 1</p>);
 	}
 }
